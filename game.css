@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    /* background-color:cadetblue; */
+    width: 100%;
+    /* height:fit-content; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cards, .card {
+    display: flex;
+    box-shadow: 0 3px 10px gray; /*box-shadow: x-offset y-offset blur spread color*/
+    border-radius: 5px;
+    width: 100px;
+    /* transition: transform .25s linear; */
+}
+.cards {
+    width: 440px;
+    padding: 5px;
+    margin: auto;
+    background-image: linear-gradient(to right, #ad6b77, #d7587a);
+    flex-wrap: wrap;
+}
+.card {
+    margin: 5px;
+    background-color: white;
+    position: relative;
+    
+}
+
+/* .card::after {
+    display: block;
+    clear: both;
+    content: '';
+} */
+
+.front {
+    /* font-size: 85px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* transform: rotateY(-180deg); */
+    /* z-index: -1; */
+    /* display: none; */
+
+}
+.card:hover .back{
+    transform: rotateY(0);
+}
+
+/* .card{
+    padding: 12px;
+    margin: 3px 0 3px 3px;
+    width: 24%;
+    height: 24%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
+/* .cards .card{
+    height: 24%;
+    width: 24%;
+    padding: 12px;
+    margin: 3px 0 3px 3px;
+} */
+/* .back{
+    display: none;
+} */
+/* .img {
+    max-width: 80px;
+} */
+/* .cards .card{
+    width: 25%;
+    height: 25%;
+} */
+/* body{
+    background-color: black;
+    width: 80%;
+    margin: 0 0 0 10%;
+} */
+/* img {
+    width: 24%;
+    height: 90px;
+    float: left;
+    margin: 0 1% 1% 0;
+    display: inline-block
+} */
+/* .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+
+}
+.cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}*/
+/* .cards .card{
+    height: calc(100/4 -10px);
+    width: (100/4 -10px);
+}  */
+/* .back {
+
+} */
