@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 body {
-    /* background-color:cadetblue; */
     width: 100%;
-    /* height:fit-content; */
 }
 .container {
     display: flex;
@@ -33,85 +30,63 @@ body {
     position: relative;
     
 }
-
-/* .card::after {
-    display: block;
-    clear: both;
-    content: '';
-} */
-
+.back {
+    /* display:none; */
+    width: 100px;
+    height: 85px;
+    transform: rotateY(-180deg);
+}
 .front {
-    /* font-size: 85px; */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     /* transform: rotateY(-180deg); */
-    /* z-index: -1; */
-    /* display: none; */
-
 }
-.card:hover .back{
-    transform: rotateY(0);
-}
-
-/* .card{
-    padding: 12px;
-    margin: 3px 0 3px 3px;
-    width: 24%;
-    height: 24%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-} */
-/* .cards .card{
-    height: 24%;
-    width: 24%;
-    padding: 12px;
-    margin: 3px 0 3px 3px;
-} */
-/* .back{
+.hide {
     display: none;
-} */
-/* .img {
-    max-width: 80px;
-} */
-/* .cards .card{
-    width: 25%;
-    height: 25%;
-} */
-/* body{
-    background-color: black;
-    width: 80%;
-    margin: 0 0 0 10%;
-} */
-/* img {
-    width: 24%;
-    height: 90px;
-    float: left;
-    margin: 0 1% 1% 0;
-    display: inline-block
-} */
-/* .card {
+}
+.instructions,.missed,.matched,.unmatched{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-
+    margin: 10px;
+    
 }
-.cards {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}*/
-/* .cards .card{
-    height: calc(100/4 -10px);
-    width: (100/4 -10px);
-}  */
-/* .back {
-
+.matched {
+    font-size: 25px;
+    color: #0eea63;
+}
+.unmatched {
+    font-size: 25px;
+    color: #f32020;
+}
+.restartBtn {
+    position: absolute;
+    top: 550px;
+    margin-left: 66%;
+}
+/* .vibration{
+    animation: vibration 0.38sec ease-in-out;
+}
+@keyframes vibration {
+    0%,100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-13px); 
+    }
+    40%{
+        transform: translateX(13px); 
+    }
+    60%{
+        transform: translateX(-8px); 
+    }
+    80%{
+        transform: translateX(8px); 
+    }
 } */
+/* .restartBtn{
+    display:inline-block;
+    background-color: #0eea63;
+} */
+
